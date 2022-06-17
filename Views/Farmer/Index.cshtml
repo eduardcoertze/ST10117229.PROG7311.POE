@@ -1,0 +1,51 @@
+﻿@model IEnumerable<ST10117229.PROG7311.POE.Models.Client>
+
+@{
+    ViewBag.Title = "Farmers";
+}
+
+<h2>Farmers</h2>
+
+<div>
+    @Html.ActionLink("Register A Farmer Here", "AddFarmer", "Client")
+</div>
+
+
+<table class="table">
+    <tr>
+        
+        <th>
+           Farmer Name
+        </th>
+        <th>
+            Farmer Surname
+        </th>
+        <th>
+            Farmer Email
+        </th>
+        
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            
+            <td>
+                @Html.DisplayFor(modelItem => item.Client_Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Client_Surname)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Client_Email)
+            </td>
+            <td>
+          
+                @Html.ActionLink("View Farmer's products", "Details", new { id = item.Client_ID }) 
+
+            </td>
+        </tr>
+    }
+
+</table>

@@ -1,0 +1,63 @@
+﻿@model IEnumerable<ST10117229.PROG7311.POE.Models.Product>
+
+@{
+    ViewBag.Title = "Farmer products";
+}
+
+<h2>Selected Farmer's Products</h2>
+
+
+<br />
+@using (Html.BeginForm())
+{
+    <p>
+        Search by Product Type: @Html.TextBox("SearchString")
+        <input type="submit" value="Search" />
+    </p>
+}
+
+
+<table class="table">
+    <tr>
+        <th>
+            Product
+        </th>
+        <th>
+            @Html.ActionLink("Product Type", "ViewFarmerProducts", new { sortOrder = ViewBag.NameSortParm })
+        </th>
+        <th>
+            @Html.ActionLink("Date of Product Release", "ViewFarmerProducts", new { sortOrder = ViewBag.DateSortParm })
+        </th>
+        <th>
+            Product Price
+        </th>
+        <th>
+            Farmer
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Product_Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Product_Type)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Product_Date)
+            </td>
+            <td>
+                R @Html.DisplayFor(modelItem => item.Product_Price)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Client.Client_Name)
+            </td>
+
+        </tr>
+    }
+
+</table>
+

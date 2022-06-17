@@ -1,0 +1,64 @@
+﻿@model ST10117229.PROG7311.POE.Models.Product
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete Product</h2>
+
+<h3>Are you sure you want to delete your Product?</h3>
+<div>
+
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            Product Name
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Product_Name)
+        </dd>
+
+        <dt>
+            Product Type
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Product_Type)
+        </dd>
+
+        <dt>
+            Product Date of Release
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Product_Date)
+        </dd>
+
+        <dt>
+            Product Price
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Product_Price)
+        </dd>
+
+        <dt>
+            Farmer
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Client.Client_Name)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to Products", "Index")
+        </div>
+    }
+</div>

@@ -1,0 +1,56 @@
+﻿@model IEnumerable<ST10117229.PROG7311.POE.Models.Product>
+
+@{
+    ViewBag.Title = "Your Products";
+}
+
+<h2>Your Products</h2>
+
+<p>
+    @Html.ActionLink("Add New Product", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+           Product
+        </th>
+        <th>
+            Product Type
+        </th>
+        <th>
+            Date of Product Release
+        </th>
+        <th>
+            Product Price
+        </th>
+        <th>
+            Farmer
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Product_Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Product_Type)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Product_Date)
+        </td>
+        <td>
+           R @Html.DisplayFor(modelItem => item.Product_Price)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Client.Client_Name)
+        </td>
+        <td>
+            @Html.ActionLink("Edit Product", "Edit", new { id=item.Product_ID }) |
+            @Html.ActionLink("Delete Product", "Delete", new { id=item.Product_ID })
+        </td>
+    </tr>
+}
+
+</table>
