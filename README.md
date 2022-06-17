@@ -42,7 +42,7 @@ The Farm Central web application is an ASP.NET C# web application Hosted on Micr
 ![7](https://user-images.githubusercontent.com/97834735/174307760-c681e4c1-d427-4c31-a1bc-1bb668da1428.png)
 
 * Updated table with farmer David Werner.
-* 
+
 ![8](https://user-images.githubusercontent.com/97834735/174307766-d90ccc3f-5279-4ab6-8e7e-1d292b2c9f50.png)
 
 * When an Employee selects the 'View Farmer's Products' hyperlink the following page will be shown. The Employee can order/sort both the date of product release and product type by selecting the table headings.
@@ -53,9 +53,17 @@ The Farm Central web application is an ASP.NET C# web application Hosted on Micr
 
 ![13](https://user-images.githubusercontent.com/97834735/174307816-d43b7345-b834-47c0-aa61-6cbedea42f50.png)
 
-![9](https://user-images.githubusercontent.com/97834735/174
+* Once a Farmer has been registered and logs into the website using the login page they will be shown the following page. This page displays to them their current stock of product. They can add a new product by selecting the 'Add New Product' hyper link and edit/delete existing products by selecting the corresponding hyperlinks.
+
+![farmer](https://user-images.githubusercontent.com/97834735/174313973-1a271771-78b2-45f6-9b8c-8d569fddb9c8.png)
+
+* When the farmer selects to add a new product they will be shown the following screen.  
+
+![9](https://user-images.githubusercontent.com/97834735/174307771-077d3e09-76e3-4f26-b43f-f49d7b4fa7c2.png)
+
+* They are then required to input the product name, type, date of release, and price then select the 'Create' button. The product will then be added to their profile.
+
 ![10](https://user-images.githubusercontent.com/97834735/174307779-6634c8c8-09a3-4d9a-843d-0be9f26055e4.png)
-![11](https://user-images.githubusercontent.com/97834735/174307789-62bb7e51-cc48-41c2-b1e8-353f55e56b64.png)
-307771-077d3e09-76e3-4f26-b43f-f49d7b4fa7c2.png)
+
 
 
