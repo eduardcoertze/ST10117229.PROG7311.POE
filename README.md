@@ -13,12 +13,25 @@ The Farm Central web application is an ASP.NET C# web application Hosted on Micr
 
 ## How to Use the Farm Central Web App
 
+* When the user clicks the link for the web-app they will be taken to this login page. If the Employee/Farmer already has a registered account they can log in here. To register an employee the 'Employee Registration' hyperlink can be selected
 ![1](https://user-images.githubusercontent.com/97834735/174307701-8c03c141-6f60-41df-b451-b14e3bfd2198.png)
+
+* Once on the Employee registration page the employee must input the values for their name, surname, email, password then, click the 'Submit' button.
 ![2](https://user-images.githubusercontent.com/97834735/174307707-99260bc2-fed8-440b-835a-9bf6ed728685.png)
+
+* The following Success dialog will be shown to the employee
 ![3](https://user-images.githubusercontent.com/97834735/174307713-40f0c0ae-3a4d-4c9f-abda-9fac1ec84514.png)
+
+* Once the employee account has been created the email and password of the registered account can be inputted into the log-in page.
 ![4](https://user-images.githubusercontent.com/97834735/174307732-bd9b9966-812f-4400-bc1a-66e49709bd2f.png)
+
+* A logged in employee will be shown a list of currently registered Farmers. To register a new farmer the 'Register A Farmer Here' hyperlink can be selected. To view the products supplied by a specific farmer the 'View Farmer's Products' hyperlink can be selected.
 ![5](https://user-images.githubusercontent.com/97834735/174307742-edcc30a9-0547-4455-b27c-50c9d797c8aa.png)
+
+* Once the employee selects to register a new farmer the following page will be shown to them. The employee must input the farmer's name, surname, email, and password then select 'Submit'
 ![6](https://user-images.githubusercontent.com/97834735/174307750-94b7d5ce-3e41-441b-8290-d68e90f4be85.png)
+
+* The following Success dialog will be shown to the employee
 ![7](https://user-images.githubusercontent.com/97834735/174307760-c681e4c1-d427-4c31-a1bc-1bb668da1428.png)
 ![8](https://user-images.githubusercontent.com/97834735/174307766-d90ccc3f-5279-4ab6-8e7e-1d292b2c9f50.png)
 ![9](https://user-images.githubusercontent.com/97834735/174
